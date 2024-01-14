@@ -44,6 +44,3 @@ class User:
 
     def get_roles(self) -> list:
         return self.roles
-
-
-
