@@ -9,22 +9,22 @@ class User:
         self.phone = ''
         self.roles = [] 
 
-    def set_firstname(self, value='': str):
+    def set_firstname(self, value: str = ''):
         self.firstname = value
 
-    def set_secondname(self, value='': str):
+    def set_secondname(self, value: str = ''):
         self.secondname = value
 
-    def set_middlename(self, value='': str):
+    def set_middlename(self, value: str = ''):
         self.middlename = value
 
-    def set_email(self, value='': str):
+    def set_email(self, value: str = ''):
         self.email = value
 
-    def set_phone(self, value='': str):
+    def set_phone(self, value: str = ''):
         self.phone = value
 
-    def add_role(self, value='': str):
+    def add_role(self, value: str = ''):
         self.roles.append(value)
 
     def get_firstname(self) -> str:
