@@ -9,20 +9,20 @@ class User:
         self.phone = ''
         self.roles = [] 
 
-    def set_firstname(self, value: str = ''):
-        self.firstname = value
+    def set_firstname(self, firstname: str = ''):
+        self.firstname = firstname
 
-    def set_secondname(self, value: str = ''):
-        self.secondname = value
+    def set_secondname(self, secondname: str = ''):
+        self.secondname = secondname
 
-    def set_middlename(self, value: str = ''):
-        self.middlename = value
+    def set_middlename(self, middlename: str = ''):
+        self.middlename = middlename
 
-    def set_email(self, value: str = ''):
-        self.email = value
+    def set_email(self, email: str = ''):
+        self.email = email
 
-    def set_phone(self, value: str = ''):
-        self.phone = value
+    def set_phone(self, phone: str = ''):
+        self.phone = phone
 
     def add_role(self, rolename: str = ''):
         self.roles.append(rolename)
