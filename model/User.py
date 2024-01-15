@@ -24,8 +24,11 @@ class User:
     def set_phone(self, value: str = ''):
         self.phone = value
 
-    def add_role(self, value: str = ''):
-        self.roles.append(value)
+    def add_role(self, rolename: str = ''):
+        self.roles.append(rolename)
+
+    def remove_role(self, rolename: str = ''):
+        self.roles.remove(rolename)
 
     def get_firstname(self) -> str:
         return self.firstname
