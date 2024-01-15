@@ -2,62 +2,62 @@
 
 class User:
     def __init__(self):
-        self.firstname = ''
-        self.secondname = ''
-        self.middlename = ''
-        self.email = ''
-        self.phone = ''
-        self.roles = []
+        self._firstname = ''
+        self._secondname = ''
+        self._middlename = ''
+        self._email = ''
+        self._phone = ''
+        self._roles = []
 
     @property
     def firstname(self) -> str:
-        return self.firstname
+        return self._firstname
     
     @property
     def secondname(self) -> str:
-        return self.secondname
+        return self._secondname
 
     @property
     def middlename(self) -> str:
-        return self.middlename
+        return self._middlename
 
     @property
     def email(self) -> str:
-        return self.email
+        return self._email
 
     @property
     def phone(self) -> str:
-        return self.phone
+        return self._phone
 
     @property
     def roles(self) -> list:
-        return self.roles
+        return self._roles
 
     @firstname.setter
     def firstname(self, firstname: str = ''):
-        self.firstname = firstname
+        self._firstname = firstname
 
     @secondname.setter
     def secondname(self, secondname: str = ''):
-        self.secondname = secondname
+        self._secondname = secondname
 
     @middlename.setter
     def middlename(self, middlename: str = ''):
-        self.middlename = middlename
+        self._middlename = middlename
 
     @email.setter
     def email(self, email: str = ''):
-        self.email = email
+        self._email = email
 
     @phone.setter
     def phone(self, phone: str = ''):
-        self.phone = phone
+        self._phone = phone
 
     def add_role(self, rolename: str = ''):
-        self.roles.append(rolename)
+        self._roles.append(rolename)
 
     def remove_role(self, rolename: str = ''):
-        self.roles.remove(rolename)
+        self._roles.remove(rolename)
 
     def has_roles(self, roles_for_check: list = []) -> bool:
         '''Check if user has roles from list
